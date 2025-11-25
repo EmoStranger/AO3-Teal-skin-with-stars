@@ -1,11 +1,3 @@
-body {
-  font-size: 100% !important;
-}
-
-.userstuff p {
-  font-size: 100% !important;
-}
-
 ::selection {
   background-color: #3ba79e;
   color: #2a2e35;
@@ -36,13 +28,6 @@ body {
 
 #workskin img {
   border-radius: 1rem;
-}
-
-#workskin img {
-  max-width: 95%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 li.comment,
@@ -76,7 +61,7 @@ li.comment:not(:has(.edit_comment)) {
 input[type="submit"]:hover,
 .actions li input[type="submit"]:hover,
 .actions .current:hover {
-  color: #eee !important;
+  color: #eeeeee !important;
   background: #2a2e35 !important;
 }
 
@@ -84,7 +69,7 @@ input[type="submit"]:hover,
 .actions li .current a:hover {
   background: #2a2e35 !important;
   background-image: none;
-  color: #eee !important;
+  color: #eeeeee !important;
 }
 
 .splash .favorite li:nth-of-type(2n+1) a {
@@ -143,7 +128,7 @@ ul.notes,
 .error,
 .comment_error,
 .alert.flash {
-  color: #eee;
+  color: #eeeeee;
   background-color: #ce4c4c;
   border: none;
   box-shadow: none;
@@ -165,10 +150,6 @@ ul.notes,
 
 .subscription dd {
   background-color: transparent !important;
-}
-
-form dd.required {
-  color: #eeeeee;
 }
 
 .splash .favorite li:nth-of-type(odd) a:hover,
@@ -202,7 +183,10 @@ form dd.required {
 
 fieldset fieldset,
 fieldset dl dl,
-.fieldset,
+.fieldset {
+  background: #22242a;
+}
+
 fieldset {
   border-radius: 0.75em;
   background: #22242a;
@@ -212,7 +196,6 @@ fieldset {
 #header .user a:visited {
   margin: 2px;
   color: #eeeeee !important;
-  padding: 0.6em 0.75em;
 }
 
 .picture .header {
@@ -246,22 +229,11 @@ h5.module .fandoms .heading,
   background: transparent !important;
 }
 
-h5.heading,
-.user .datetime,
-.bookmark .user .userstuff,
-.bookmark .user .meta {
-  margin: 10px;
-}
-
 .reading h4.viewed {
   background: #2a2e35;
   border: 1px solid #eeeeee;
   padding: 0.5em;
   border-radius: 0.25em;
-}
-
-.posted {
-  font-size: 0.8em;
 }
 
 #header .menu,
@@ -279,9 +251,10 @@ h5.heading,
   background: #22242a !important;
 }
 
-#header .menu,
-#small_login {
-  box-sizing: border-box;
+li.blurb {
+  border-radius: 0.75em;
+  background: #2a2e35;
+  border: none;
 }
 
 .filters .submit input {
@@ -292,7 +265,7 @@ h5.heading,
   padding-right: 0;
   text-align: center;
   color: #22242a;
-  background: #eee;
+  background: #eeeeee;
 }
 
 #header #search>* {
@@ -305,7 +278,7 @@ form.verbose legend,
 .verbose form legend {
   height: auto;
   width: auto;
-  font-size: 75%;
+  font-size: 100%;
   background: #3ba79e;
   color: #22242a;
   border: none;
@@ -481,16 +454,25 @@ a.current,
 
 .action.top,
 .action a:link {
- background: #eeeeee;
+  background: #eeeeee;
   color: #22242a;
   height: auto;
   font-weight: bolder;
+}
+
+.actions a.symbol,
+.action a {
+  padding: 0 0 0.015em 0;
 }
 
 .splash .module h3 {
   border-bottom: none;
   font-variant: small-caps;
   font-size: 1.914em;
+}
+
+.title {
+  font-variant: small-caps;
 }
 
 form .notice,
@@ -590,10 +572,6 @@ dl.index dd,
   border-bottom: none;
 }
 
-#dashboard ul {
-  padding: 5px 0;
-}
-
 .actions a,
 .action,
 .actions input,
@@ -608,7 +586,7 @@ a.cloud5 {
 
 a:visited,
 a.cloud6 {
-  color: #20C2C6;
+  color: #eeeeee;
 }
 
 thead,
@@ -621,6 +599,7 @@ input,
 textarea,
 #modal .content,
 .actions a,
+.action,
 .actions input,
 input[type="submit"],
 button,
@@ -642,12 +621,6 @@ dl.meta,
   border-radius: 5px;
 }
 
-li.blurb {
-  border-radius: 0.75em;
-  background: #2a2e35;
-  border: none;
-}
-
 li.blurb,
 .blurb .blurb,
 .listbox .index,
@@ -657,7 +630,7 @@ li.blurb,
 
 #header ul.primary {
   box-shadow: none;
-  padding: 1em;
+  padding: 0.5em;
   color: #3ba79e;
   background: url(https://raw.githubusercontent.com/EmoStranger/AO3-Teal-skin-with-stars/refs/heads/main/image/n258zogMiD1qhwjx8.png);
   background-position-y: -400px;
@@ -678,16 +651,16 @@ li.blurb,
   color: #3ba79e !important;
 }
 
-#header .dropdown .menu a {
-  background: transparent;
-  display: block;
-  padding: 0.75em 0.5em 0.5em;
-  margin: 0px;
-}
-
 #header .dropdown .menu .current {
   background-color: #eeeeee;
   color: #2a2e35;
+}
+
+#workskin img {
+  max-width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .autocomplete div.dropdown ul {
@@ -720,14 +693,6 @@ fieldset fieldset.listbox,
 .comment_error {
   background: #2a2e35;
   color: #eeeeee;
-}
-
-div.comment,
-li.comment {
-  position: relative;
-  border: 1px solid #dddddd00;
-  overflow: visible;
-  text-align: start;
 }
 
 .comment h4.byline {
@@ -803,12 +768,6 @@ span.delete {
   box-shadow: none;
 }
 
-#header .primary .menu a {
-  color: #111;
-  padding: 0.75em 0.5em 0.5em;
-  margin: 0px;
-}
-
 #header .primary .menu .current {
   color: #00273d !important;
 }
@@ -850,7 +809,6 @@ a.cloud2 {
 }
 
 .actions a:active,
-.action:hover,
 .current,
 a.current,
 .current a:visited {
@@ -1034,6 +992,7 @@ span.symbol {
   color: #eeeeee;
   background: #22242a;
   box-shadow: none;
+  padding: 1em;
 }
 
 #modal-bg {
@@ -1054,7 +1013,6 @@ span.symbol {
 .characters a:before,
 .relationships a:before,
 .freeforms a:before,
-.tags a:before,
 .meta a:before {
   color: #eeeeee;
   content: "\2726";
@@ -1082,7 +1040,7 @@ input[type="submit"],
 .actions li label,
 .action:link {
   color: #22242a;
-  background: #eee;
+  background: #eeeeee;
   border: none !important;
   border-bottom: none;
   background-image: none;
@@ -1100,7 +1058,7 @@ input[type="submit"]:hover,
 .actions li input[type="submit"]:hover,
 .actions .current:hover {
   color: #eeeeee;
-  background: #28282a;
+  background: #22242a;
   border: none;
   border-bottom: none;
   background-image: none;
@@ -1204,7 +1162,7 @@ summary {
 
 .preface blockquote {
   border: 0;
-  font-size: 100%;
+  font-size: 100% !important;
 }
 
 p.kudos {
@@ -1239,12 +1197,13 @@ ul.series li {
 .comment .icon .visitor {
   background: url(/images/imageset.png) no-repeat -1px -76px;
   padding: 0px;
-  margin: 0px;
+  margin: 5px;
 }
 
 .skins .primary .icon,
 .admin .primary .icon {
   padding: 0px;
+  margin: 10px;
 }
 
 .bookmark .count a {
@@ -1252,14 +1211,8 @@ ul.series li {
 }
 
 .announcement .userstuff {
-  background: #2a2e35;
-  border-color: #2a2e35;
-  color: #fff;
-}
-
-.alert .userstuff {
-  background: #2a2e35;
-  border-color: #2a2e35;
+  background: #3ba79e;
+  border-color: #3ba79e;
   color: #fff;
 }
 
@@ -1269,9 +1222,9 @@ ul.series li {
 
 .announcement input[type="submit"],
 .announcement .action {
-  background: #2a2e35 none;
-  border: 1px solid #3ba79e;
-  color: #eee;
+  background: #fff none;
+  border: 1px solid #ce4c4c;
+  color: #f7f7f7;
   font-size: 0.875em;
   padding: 0.25em 0.5em;
   border-radius: 2em;
@@ -1325,7 +1278,8 @@ input[name="post_button"]:hover {
 
 #footer .heading,
 #footer ul,
-#footer ul.navigation a {
+#footer ul.navigation a,
+#footer button {
   color: #eeeeee !important;
 }
 
@@ -1333,12 +1287,32 @@ input[name="post_button"]:hover {
   box-shadow: none;
 }
 
+.event.announcement .userstuff a,
+.filters .expander {
+  color: #eeeeee;
+}
+
+.kudos_error {
+  background: #22242a;
+  border-color: #26ba9a;
+  box-shadow: none;
+}
+
+.blurb ul.required-tags li span {
+  border-radius: 5px;
+}
+
+.bookmark .status span,
+.bookmark .status a {
+  border-radius: 5px;
+}
+
 .warnings,
 .warning .tags,
-.relationships,
-.relationships .tags,
 .characters,
-.characters .tags {
+.characters .tags,
+.relationships,
+.relationships .tags {
   color: transparent;
 }
 
@@ -1357,18 +1331,14 @@ input[name="post_button"]:hover {
   color: #96ff9d;
 }
 
-.series a {
-  color: #3ba79e;
-}
-
 .event.announcement .userstuff a,
 .filters .expander {
-  color: #eee;
+  color: #eeeeee;
 }
 
 .kudos_error {
-  background: #22242a;
-  border-color: #26ba9a;
+  background: transparent;
+  border-color: #900;
   box-shadow: none;
 }
 
@@ -1381,21 +1351,70 @@ input[name="post_button"]:hover {
   border-radius: 5px;
 }
 
+.warnings,
+.warning .tags,
+.characters,
+.characters .tags,
+.relationships,
+.relationships .tags {
+  color: transparent;
+}
+
+.warnings a,
+.warning .tags a {
+  color: #ff3e62;
+}
+
+.relationships a,
+.relationships .tags a {
+  color: #93a9ff;
+}
+
+.characters a,
+.characters .tags a {
+  color: #96ff9d;
+}
+
 .statistics .index li:nth-of-type(2n) {
   background: transparent;
 }
 
 #comment_cancel {
-  color: #eee !important;
+  color: #eeeeee !important;
+}
+
+#header .user a,
+#small_login .action {
+  padding: 0.55em 0.75em;
 }
 
 .dropdown {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+#header .dropdown .menu a {
+  background: transparent;
+  display: block;
+  padding: 0.75em 0.5em 0.5em;
+  margin: 0px;
+}
+
+#header .menu,
+#small_login {
+  box-sizing: border-box;
+}
+
+div.comment,
+li.comment {
+  position: relative;
+  border: 1px solid #dddddd00;
+  overflow: visible;
+  text-align: start;
+}
+
 .actions button {
   color: #22242a;
-  background: #eee;
+  background: #eeeeee;
   border: transparent;
   border-bottom: transparent;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -1404,16 +1423,40 @@ input[name="post_button"]:hover {
 
 .actions button:hover,
 .actions button:focus {
-  color: #eee;
+  color: #eeeeee;
   background: #2a2e35;
   border-top: none;
   border-left: none;
   box-shadow: none;
 }
 
+.alert .userstuff {
+  background: #2a2e35;
+  border-color: #2a2e35;
+  color: ffffff;
+}
+
+.announcement input[type="submit"],
+.announcement .action {
+  background: #2a2e35 none;
+  border: 1px solid #3ba79e;
+  color: #eeeeee;
+  font-size: 0.875em;
+  padding: 0.25em 0.5em;
+  border-radius: 2em;
+}
+
+.action:hover {
+  box-shadow: none;
+}
+
 .work.navigation .download,
 .javascript .work.navigation .download .secondary {
   background: #22242a;
-  border: 2px solid #bbb;
+  border: 2px solid #bbbbbb;
   box-shadow: none;
+}
+
+form dd.required {
+  color: #eeeeee;
 }
