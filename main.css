@@ -481,6 +481,7 @@ a.current,
 
 .action.top,
 .action a:link {
+ background: #eeeeee;
   color: #22242a;
   height: auto;
   font-weight: bolder;
@@ -741,6 +742,7 @@ body,
 .autocomplete .notice,
 .post .required .warnings,
 .listbox .heading,
+.listbox .heading a:visited,
 .userstuff h2,
 .userstuff caption,
 .userstuff table,
@@ -1414,14 +1416,4 @@ input[name="post_button"]:hover {
   background: #22242a;
   border: 2px solid #bbb;
   box-shadow: none;
-}
-
-.listbox .heading a:visited {
-  color: #3ba79e;
-}
-
-.action {
-  border-color: #3ba79e;
-  color: #eee;
-  border-radius: 5px;
 }
