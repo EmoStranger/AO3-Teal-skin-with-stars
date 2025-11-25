@@ -1457,6 +1457,7 @@ li.comment {
   box-shadow: none;
 }
 
-form dd.required {
+form dd.required,
+.action:visited {
   color: #eeeeee;
 }
