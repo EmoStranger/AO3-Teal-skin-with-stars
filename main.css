@@ -1331,50 +1331,6 @@ input[name="post_button"]:hover {
   color: #96ff9d;
 }
 
-.event.announcement .userstuff a,
-.filters .expander {
-  color: #eeeeee;
-}
-
-.kudos_error {
-  background: transparent;
-  border-color: #900;
-  box-shadow: none;
-}
-
-.blurb ul.required-tags li span {
-  border-radius: 5px;
-}
-
-.bookmark .status span,
-.bookmark .status a {
-  border-radius: 5px;
-}
-
-.warnings,
-.warning .tags,
-.characters,
-.characters .tags,
-.relationships,
-.relationships .tags {
-  color: transparent;
-}
-
-.warnings a,
-.warning .tags a {
-  color: #ff3e62;
-}
-
-.relationships a,
-.relationships .tags a {
-  color: #93a9ff;
-}
-
-.characters a,
-.characters .tags a {
-  color: #96ff9d;
-}
-
 .statistics .index li:nth-of-type(2n) {
   background: transparent;
 }
