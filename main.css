@@ -1312,7 +1312,9 @@ input[name="post_button"]:hover {
 .characters,
 .characters .tags,
 .relationships,
-.relationships .tags {
+.relationships .tags
+.freeforms,
+.freeforms .tags {
   color: transparent;
 }
 
@@ -1329,6 +1331,11 @@ input[name="post_button"]:hover {
 .characters a,
 .characters .tags a {
   color: #96ff9d;
+}
+
+.freeforms a,
+.freeforms .tags a {
+  color: #3ba79e;
 }
 
 .statistics .index li:nth-of-type(2n) {
