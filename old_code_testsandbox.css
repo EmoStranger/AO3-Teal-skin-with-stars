@@ -1329,3 +1329,28 @@ input[name="post_button"]:hover {
 #comment_cancel {
   color: #eee !important;
 }
+
+.actions button {
+color: #22242a;
+background: #eee;
+border: transparent;
+border-bottom: transparent;
+font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+font-weight: normal;
+}
+
+.actions button:hover,
+.actions button:focus {
+color: #eee;
+background: #2a2e35;
+border-top: none;
+border-left: none;
+box-shadow: none;
+}
+
+.work.navigation .download,
+.javascript .work.navigation .download .secondary {
+background: #22242a;
+border: 2px solid #bbbbbb;
+box-shadow: none;
+}
