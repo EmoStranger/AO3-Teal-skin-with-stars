@@ -431,7 +431,7 @@ a.tag {
 a.current,
 .current a:visited,
 .current a:link {
-  color: #22242a;
+  color: #22242a !important;
   background: #eeeeee;
   border: none;
   border-bottom: none;
@@ -594,6 +594,7 @@ a.cloud5 {
   color: #eeeeee;
 }
 
+a:visited,
 a.cloud6 {
   color: #eeeeee;
 }
@@ -1327,9 +1328,4 @@ input[name="post_button"]:hover {
 
 #comment_cancel {
   color: #eee !important;
-}
-
-a:visited,
-.actions a:visited {
-  color: #00BFFF;
 }
